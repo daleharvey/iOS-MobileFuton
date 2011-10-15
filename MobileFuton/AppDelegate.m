@@ -7,14 +7,29 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+
+#define dbName @"mobilefuton"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize serverURL = _serverURL;
+@synthesize viewController = _viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    //self.window.rootViewController = self.viewController;
+    //[self.window makeKeyAndVisible];
+    
+    CouchbaseMobile* cb = [[CouchbaseMobile alloc] init];
+    cb.delegate = self;
+    
+    NSString* dbPath = [[NSBundle mainBundle] pathForResource: dbName ofType: @"couch"];
+    [cb installDefaultDatabase: dbPath];
+    
+    NSAssert([cb start], @"Couchbase didn't start! Error = %@", cb.error); 
+    
     return YES;
 }
 							
@@ -56,5 +71,21 @@
      See also applicationDidEnterBackground:.
      */
 }
+
+-(void)couchbaseMobile:(CouchbaseMobile*)couchbase didStart:(NSURL*)serverURL {
+        
+    NSLog(@"Couchbase is Ready, go! %@", serverURL);
+    
+    _serverURL = serverURL;
+        
+    NSURLRequest *couchURLRequest = [NSURLRequest requestWithURL:serverURL];
+    [[_viewController webView] loadRequest:couchURLRequest];
+    
+}
+
+-(void)couchbaseMobile:(CouchbaseMobile*)couchbase failedToStart:(NSError*)error {
+    NSAssert(NO, @"Couchbase failed to initialize: %@", error);
+}
+
 
 @end

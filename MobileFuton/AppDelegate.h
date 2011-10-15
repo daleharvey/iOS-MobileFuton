@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Couchbase/CouchbaseMobile.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "ViewController.h"
 
+@interface AppDelegate : UIResponder <UIApplicationDelegate, CouchbaseDelegate> {
+    UIWindow *window;
+}
+
+@property (strong, nonatomic) NSURL *serverURL;
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) ViewController *viewController;
 
 @end

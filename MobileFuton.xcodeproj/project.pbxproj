@@ -16,6 +16,11 @@
 		B62C099E143556AF0025E8A9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62C099C143556AF0025E8A9 /* MainStoryboard_iPhone.storyboard */; };
 		B62C09A1143556AF0025E8A9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62C099F143556AF0025E8A9 /* MainStoryboard_iPad.storyboard */; };
 		B62C09A4143556AF0025E8A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B62C09A3143556AF0025E8A9 /* ViewController.m */; };
+		B62C09AB143557910025E8A9 /* Couchbase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62C09AA143557910025E8A9 /* Couchbase.framework */; };
+		B62C09AF143558270025E8A9 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B62C09AC143558270025E8A9 /* libstdc++.dylib */; };
+		B62C09B0143558270025E8A9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B62C09AD143558270025E8A9 /* libz.dylib */; };
+		B62C09B1143558270025E8A9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62C09AE143558270025E8A9 /* Security.framework */; };
+		B68D221C1448B46D0023EAC8 /* mobilefuton.couch in Resources */ = {isa = PBXBuildFile; fileRef = B68D221A1448B46D0023EAC8 /* mobilefuton.couch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +28,21 @@
 		B62C098A143556AF0025E8A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B62C098C143556AF0025E8A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B62C098E143556AF0025E8A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B62C0992143556AF0025E8A9 /* MobileFuton-Info.plist */ = {isa = PBXFileReference; path = "MobileFuton-Info.plist"; sourceTree = "<group>"; };
+		B62C0992143556AF0025E8A9 /* MobileFuton-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MobileFuton-Info.plist"; sourceTree = "<group>"; };
 		B62C0994143556AF0025E8A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B62C0996143556AF0025E8A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B62C0998143556AF0025E8A9 /* MobileFuton-Prefix.pch */ = {isa = PBXFileReference; path = "MobileFuton-Prefix.pch"; sourceTree = "<group>"; };
-		B62C0999143556AF0025E8A9 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		B62C0998143556AF0025E8A9 /* MobileFuton-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobileFuton-Prefix.pch"; sourceTree = "<group>"; };
+		B62C0999143556AF0025E8A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B62C099A143556AF0025E8A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B62C099D143556AF0025E8A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		B62C09A0143556AF0025E8A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		B62C09A2143556AF0025E8A9 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		B62C09A2143556AF0025E8A9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B62C09A3143556AF0025E8A9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B62C09AA143557910025E8A9 /* Couchbase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Couchbase.framework; path = Frameworks/Couchbase.framework; sourceTree = "<group>"; };
+		B62C09AC143558270025E8A9 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		B62C09AD143558270025E8A9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B62C09AE143558270025E8A9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B68D221A1448B46D0023EAC8 /* mobilefuton.couch */ = {isa = PBXFileReference; lastKnownFileType = file; path = mobilefuton.couch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,9 +50,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B62C09AF143558270025E8A9 /* libstdc++.dylib in Frameworks */,
+				B62C09B0143558270025E8A9 /* libz.dylib in Frameworks */,
+				B62C09B1143558270025E8A9 /* Security.framework in Frameworks */,
 				B62C098B143556AF0025E8A9 /* UIKit.framework in Frameworks */,
 				B62C098D143556AF0025E8A9 /* Foundation.framework in Frameworks */,
 				B62C098F143556AF0025E8A9 /* CoreGraphics.framework in Frameworks */,
+				B62C09AB143557910025E8A9 /* Couchbase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +66,9 @@
 		B62C097B143556AF0025E8A9 = {
 			isa = PBXGroup;
 			children = (
+				B62C09AC143558270025E8A9 /* libstdc++.dylib */,
+				B62C09AD143558270025E8A9 /* libz.dylib */,
+				B62C09AE143558270025E8A9 /* Security.framework */,
 				B62C0990143556AF0025E8A9 /* MobileFuton */,
 				B62C0989143556AF0025E8A9 /* Frameworks */,
 				B62C0987143556AF0025E8A9 /* Products */,
@@ -69,6 +86,7 @@
 		B62C0989143556AF0025E8A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B62C09AA143557910025E8A9 /* Couchbase.framework */,
 				B62C098A143556AF0025E8A9 /* UIKit.framework */,
 				B62C098C143556AF0025E8A9 /* Foundation.framework */,
 				B62C098E143556AF0025E8A9 /* CoreGraphics.framework */,
@@ -93,6 +111,7 @@
 		B62C0991143556AF0025E8A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B68D221A1448B46D0023EAC8 /* mobilefuton.couch */,
 				B62C0992143556AF0025E8A9 /* MobileFuton-Info.plist */,
 				B62C0993143556AF0025E8A9 /* InfoPlist.strings */,
 				B62C0996143556AF0025E8A9 /* main.m */,
@@ -111,6 +130,7 @@
 				B62C0982143556AF0025E8A9 /* Sources */,
 				B62C0983143556AF0025E8A9 /* Frameworks */,
 				B62C0984143556AF0025E8A9 /* Resources */,
+				B62C09B2143558390025E8A9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -154,10 +174,27 @@
 				B62C0995143556AF0025E8A9 /* InfoPlist.strings in Resources */,
 				B62C099E143556AF0025E8A9 /* MainStoryboard_iPhone.storyboard in Resources */,
 				B62C09A1143556AF0025E8A9 /* MainStoryboard_iPad.storyboard in Resources */,
+				B68D221C1448B46D0023EAC8 /* mobilefuton.couch in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B62C09B2143558390025E8A9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rsync -a \"${SRCROOT}/Frameworks/Couchbase.framework/CouchbaseResources\" \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B62C0982143556AF0025E8A9 /* Sources */ = {
@@ -250,6 +287,10 @@
 		B62C09A8143556AF0025E8A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MobileFuton/MobileFuton-Prefix.pch";
 				INFOPLIST_FILE = "MobileFuton/MobileFuton-Info.plist";
@@ -261,6 +302,10 @@
 		B62C09A9143556AF0025E8A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MobileFuton/MobileFuton-Prefix.pch";
 				INFOPLIST_FILE = "MobileFuton/MobileFuton-Info.plist";
@@ -288,6 +333,7 @@
 				B62C09A9143556AF0025E8A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
